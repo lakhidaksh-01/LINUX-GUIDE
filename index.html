@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Commands and Shell</title>
+    <link rel="stylesheet" href="styles02.css">
+</head> 
+<body>
+
+    <header>
+        <h1>Learn <span style="color: rgb(255, 200, 0);">Linux</span> : A <span style="color: rgb(255, 255, 255);">Beginner's</span> Guide</h1>
+        <div class="profile-container"><a href="https://www.linkedin.com/in/daksh-lakhi"><img src="03571443-83c9-4b8d-a6b7-3f66434422b2.jpg"  alt="Profile Picture" class="profile-picture"></a>
+            <div class="name">DAKSH LAKHI</div>
+        </div>
+    </header>
+
+   
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nava">
+            <a href="#introduction">Introduction</a>
+            <a href="#basic-commands">Basic Commands</a>
+            <a href="#shell-scripting">Shell Scripting</a>
+            <a href="#footer">Contact</a>
+        </div>
+        <button id="toggleButton" class="toggle-button">
+            <img src="day-and-night (1).png" alt="day-and-night" class="icon" width="50px" height="50px">
+        </button>
+    </nav>
+
+
+    <div class="container">
+
+
+
+        <section id="introduction" class="section">
+            <h2>Introduction to Linux Operating System</h2>
+            <ul class="commands">
+                <li>Linux is a family of open-source, Unix-like operating systems that are based on the Linux kernel.</li>
+                <li>It was initially released by Linus Torvalds on September 17, 1991.</li>
+                <li>As a free and open-source operating system, its source code can be modified and distributed both commercially and noncommercially.</li>
+                <li>Originally created for personal computers, Linux has gradually been adopted for use in other machines such as servers, mainframe computers, and supercomputers.</li>
+                <li>Today, Linux is also utilized in embedded systems including routers, automation controls, televisions, digital video recorders, video game consoles, and smartwatches.</li>
+                <li>One of Linux's biggest successes is Android, an operating system based on the Linux kernel, which is widely used on smartphones and tablets.</li>
+                <li>Due to Android, Linux has the largest installed base of all general-purpose operating systems.</li>
+                <li>Linux is generally packaged in a form known as a Linux distribution.</li>
+            </ul>
+        </section>
+
+
+
+
+        <section id="basic-commands" class="section">
+            <h2>Linux Commands You Should Know</h2>
+            <ol class="spaced-list">
+                <li>
+                    <p><b>ls</b> - The <code>ls</code> command lists directory contents.</p>
+                    <pre><code>ls -l<br>
+# Common Options
+-a: Lists all entries including hidden files (those starting with a dot '.').
+-l: Uses a long listing format.
+-h: When used with '-l', shows file sizes in human-readable format (e.g., KB, MB).
+-R: Lists directories and their contents recursively.
+                    </code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>pwd</b> - The <code>pwd</code> command prints the working directory.</p>
+                    <pre><code>pwd</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>cd</b> - The <code>cd</code> command changes the current directory.</p>
+                    <pre><code>cd dir_name</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>mkdir</b> - The <code>mkdir</code> command creates a new directory.</p>
+                    <pre><code>mkdir new_directory</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>rmdir</b> - The <code>rmdir</code> command removes an empty directory.</p>
+                    <pre><code>rmdir directory</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>cp</b> - The <code>cp</code> command copies files or directories.</p>
+                    <pre><code># It will copy a file called example.txt from the current directory to a directory called abc<br>
+cp example.txt abc/</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>mv</b> - The <code>mv</code> command moves or renames files or directories.</p>
+                    <pre><code>mv old_name new_name</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>touch</b> - The <code>touch</code> command creates an empty file or updates the timestamp of an existing file.</p>
+                    <pre><code>touch filename</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>rm</b> - The <code>rm</code> command removes files or directories.</p>
+                    <pre><code>rm file</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>clear</b> - The <code>clear</code> command clears the terminal screen.</p>
+                    <pre><code>clear</code></pre>
+                </li>
+                
+                
+                <li>
+                    <p><b>ps</b> - The <code>ps</code> command displays information about running processes.</p>
+                    <pre><code>ps</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>su</b> - The <code>su</code> command allows you to switch user.</p>
+                    <pre><code>su username</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>sudo</b> - The <code>sudo</code> command allows a permitted user to execute a command as the superuser or another user.</p>
+                    <pre><code>sudo command</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>vim</b> - The <code>vim</code> command opens the Vim text editor.</p>
+                    <pre><code>vim filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>man</b> - The <code>man</code> command displays the manual pages for Unix and Unix-like operating systems.</p>
+                    <pre><code>man command_name</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>cat</b> - The <code>cat</code> command concatenates files and prints the output to the standard output.</p>
+                    <pre><code>cat filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>chmod</b> - The <code>chmod</code> command changes the permissions of a file or directory.</p>
+                    <pre><code>
+# The first digit denotes permissions for the file/directory owner.
+# The second digit denotes permissions for the group to which the file/directory belongs.
+# The third digit denotes permissions for all other users.
+# Permissions:
+# 0 (no permission)
+# 1 (execute only)
+# 2 (write only)
+# 3 (write and execute)
+# 4 (read only)
+# 5 (read and execute)
+# 6 (read and write)
+ # 7 (read, write, and execute)
+                        
+# Example:
+# Change permissions of "file.txt" to 700 (read, write, and execute for the file owner, no permissions for group and others)<br>
+chmod 700 file.txt
+                        </code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>chown</b> - The <code>chown</code> command changes the owner and group of a file or directory.</p>
+                    <pre><code>chown new_owner filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>tar</b> - The <code>tar</code> command is used to compress and decompress files.</p>
+                    <pre><code>
+# x: Extract files from an archived package
+# t: Display the contents of an archived package
+# r: Add files to an existing archived package
+# z: Apply gzip compression
+# j: Apply bzip2 compression
+# cf: Create an archived package with specified files
+# xf: Extract specific files from an archived package<br>
+tar cf archive.tar file1 file2 file
+                        </code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>gzip</b> - The <code>gzip</code> command compresses files using the gzip algorithm.</p>
+                    <pre><code>gzip filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>gunzip</b> - The <code>gunzip</code> command is used to decompress files compressed by gzip.</p>
+                    <pre><code>gunzip file.gz</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>useradd</b> - The <code>useradd</code> command is used to create a new user account.</p>
+                    <pre><code>useradd username</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>passwd</b> - The <code>passwd</code> command is used to change a user's password.</p>
+                    <pre><code>passwd username</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>userdel</b> - The <code>userdel</code> command is used to delete a user account.</p>
+                    <pre><code>userdel username</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>uptime</b> - The <code>uptime</code> command shows how long the system has been running.</p>
+                    <pre><code>uptime</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>df</b> - The <code>df</code> command displays disk space usage for filesystems.</p>
+                    <pre><code>df -h</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>du</b> - The <code>du</code> command shows disk usage of files and directories.</p>
+                    <pre><code>du -sh directory</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>mount</b> - The <code>mount</code> command mounts a filesystem.</p>
+                    <pre><code>mount /dev/sdX /mnt</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>unmount</b> - The <code>unmount</code> command unmounts a filesystem.</p>
+                    <pre><code>umount /mnt</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>date</b> - The <code>date</code> command displays the current date and time.</p>
+                    <pre><code>date</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>whoami</b> - The <code>whoami</code> command prints the current user's username.</p>
+                    <pre><code>whoami</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>finger</b> - The <code>finger</code> command displays information about user(s) on the system.</p>
+                    <pre><code>finger username</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>uname</b> - The <code>uname</code> command prints system information.</p>
+                    <pre><code>uname -a<br>
+# Common Options
+-a, --ignore, provided for compatibility with other versions
+-Z, --context, Display solely the security context of the current user                       
+-g, --group , Output solely the effective group ID                      
+-G, --groups, Output all group IDs          
+-n, --name, Output a name instead of a number, used with -ugG         
+-r, --real, Output the real ID rather than the effective ID, along with -ugG
+-u, --user, Output only the effective user ID                       
+</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>cat</b> - The <code>cat</code> command concatenates files and prints the output to the console.</p>
+                    <pre><code>cat filename</code></pre>
+                </li>
+
+                
+                <li>
+                    <p><b>history</b> - The <code>history</code> command displays the command history of the current user.</p>
+                    <pre><code>history</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>echo</b> - The <code>echo</code> command prints text or variables to the terminal.</p>
+                    <pre><code>echo "Hello, world!"</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>tee</b> - The <code>tee</code> command reads from standard input and writes to standard output and files.</p>
+                    <pre><code>command | tee file.txt</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>locate</b> - The <code>locate</code> command is used to find files by name quickly.</p>
+                    <pre><code>locate filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>uniq</b> - The <code>uniq</code> command filters adjacent matching lines from input.</p>
+                    <pre><code>uniq filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>nl</b> - The <code>nl</code> command numbers lines in a file.</p>
+                    <pre><code>nl filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>tr</b> - The <code>tr</code> command translates or deletes characters.</p>
+                    <pre><code>tr '[:lower:]' '[:upper:]'</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>sed</b> - The <code>sed</code> command is a stream editor for filtering and transforming text.</p>
+                    <pre><code>sed 's/search/replace/g' filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>cal</b> - The <code>cal</code> command displays a calendar.</p>
+                    <pre><code>cal</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>cmp</b> - The <code>cmp</code> command compares two files byte by byte.</p>
+                    <pre><code>cmp file1 file2</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>sort</b> - The <code>sort</code> command sorts lines of text files.</p>
+                    <pre><code>sort filename<br>
+# Common Options
+-u, --sorted uniq values in ascending
+-r, --sorted in decending                       
+-unr, --shows only first characters                     
+-k2, --no. of coloumns used in line        
+-n, --sorted in ascending (default)
+</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>wc</b> - The <code>wc</code> command counts lines, words, and characters in a file.</p>
+                    <pre><code>wc filename</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>grep</b> - The <code>grep</code> command searches for patterns in files.</p>
+                    <pre><code>grep "search_pattern" file.txt</code></pre>
+                </li>
+
+
+                <li>
+                    <p><b>head/tail</b> - The <code>head</code> and <code>tail</code> commands display the beginning or end of files.</p>
+                    <pre><code>head -n 10 filename</code></pre>
+                    <pre><code>tail -n 10 filename</code></pre>
+                </li>
+                
+                
+            </ol>
+        </section>
+
+
+
+
+
+
+        <section id="shell-scripting" class="section">
+            <h2>Shell Scripting</h2>
+           
+
+
+            <div class="content">
+                <div class="text-content">
+                    <p>A shell provide an environment to a user to execute commands and interact with kernel.
+                        <ul>
+                        <li>Shell script consist of set of commands to perform a task.</li>
+                        <li>All the commands execute sequentially.</li>
+                        <li>Some task like file manipulation, program execution, user interaction, automation of task etc can be done</li></ul></p>
+                </div>
+                <img src="linuxshell.png" alt="linux" width="156px" height="200px">
+            </div>
+            <br><br>
+
+
+            <h3>Scripting format</h3>
+            <pre><code>#!/bin/bash</code></pre>
+
+
+            <h3>Basic Script</h3>
+            <pre><code>#!/bin/bash
+echo "Hello, World!"</code></pre>
+
+
+            <h3>Comments</h3>
+            <pre><code>#This is a comment (single line)</code></pre>
+
+            <h3>Variables</h3>
+            <pre><code>#!/bin/bash
+name="John"
+age=18
+host=$(hostname)
+echo "Hello, $name"
+echo "$host age is $age"</code></pre>
+
+
+<h3>Taking inputs from</h3>
+<pre><code>read any-variable</code></pre>
+
+
+<h3>Constant variables</h3>
+<pre><code>readonly name="Daksh"
+name="john"
+echo"$name"
+
+Output:Daksh
+</code></pre>
+
+<br><br>
+<h2>If-Else Statements</h2>
+<p>If-else statements are used to make decisions in your script.</p>
+<pre><code># If-Else Example
+if [ "$1" -gt 100 ]
+then
+echo "The number is greater than 100."
+else
+echo "The number is 100 or less."
+fi
+
+
+If-Else Example 2
+if [ -e filename.txt ]
+then
+echo "file exist"
+else
+echo "file does not exist"
+fi
+</code></pre>
+
+
+
+<br><br>
+<h2>Switch Cases</h2>
+    <p>Switch cases (using `case` in shell scripting) allow you to execute different parts of code based on the value of a variable.</p>
+    <pre><code># Case Example
+case "$1" in
+    1)
+        echo "Starting the service..."
+        ;;
+    2)
+        echo "Stopping the service..."
+        ;;
+    3)
+        echo "Restarting the service..."
+        ;;
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+        ;;
+esac
+    </code></pre>
+
+
+<br><br>
+<h2>Loops</h2>
+<p>Loops are used to repeat a set of commands multiple times. There are three main types of loops in shell scripting: <code>for</code> loops, <code>while</code> loops, and <code>until</code> loops.</p>
+
+
+<p>A <code>for</code> loop is used to iterate over a list of items.</p>
+<pre><code># For Loop Example
+for i in 1 2 3 4 5
+do
+echo "Iteration $i"
+done
+</code></pre>
+<p>In this example, the loop iterates over the numbers 1 to 5, printing the iteration number each time.</p>
+
+<pre><code># For Loop Example 2
+for x in raj om shiv
+do
+echo "My name is $x"
+done
+</code></pre>
+<p>In this example, the loop iterates over the words, printing the words each time.</p>
+
+<br>
+<h3>While Loop</h3>
+<p>A <code>while</code> loop repeats as long as a specified condition is true.</p>
+<pre><code># While Loop Example
+count=0
+num=10
+while [ $count -le $num ]
+do
+echo "Numbers are $count"
+let count++
+done
+</code></pre>
+<p>In this example, the loop runs as long as <code>$count</code> is less than or equal to 10, incrementing the count each time.</p>
+
+<br>
+<h3>Until Loop</h3>
+<p>An <code>until</code> loop repeats until a specified condition becomes true.</p>
+<pre><code># Until Loop Example
+count=0
+num=10
+while [ $num -eq $count ]
+do
+echo "$num"
+let num--
+done
+</code></pre>
+<p>In this example, the loop runs until <code>$count</code> is equal to 0, decrementing the count each time.</p>
+
+<br>
+<h3>Infinite Loop</h3>
+<p>An infinite loop runs indefinitely and only stops when it is manually terminated. Here's an example using a <code>while</code> loop:</p>
+<pre><code># Infinite Loop Example
+while true
+do
+echo "Hi"
+sleep 2s
+done
+</code></pre>
+<p>In this example:</p>
+<ul>
+    <li><code>while true</code>: The loop condition is always <code>true</code>, so the loop will run indefinitely.</li>
+    <li><code>do</code>: This starts the body of the loop.</li>
+    <li><code>echo "Hi"</code>: This prints "Hi" to the terminal each time the loop runs.</li>
+    <li><code>sleep 2s</code>: This pauses the loop for 2 seconds before the next iteration. The <code>sleep</code> command is used to delay the next command execution.</li>
+    <li><code>done</code>: This ends the body of the loop.</li>
+</ul>
+<p>You can stop an infinite loop manually by pressing <code>Ctrl + C</code> in the terminal where the script is running.</p>
+
+
+<br><br>
+<h2>Functions</h2>
+<p>Functions allow you to group commands into reusable blocks. You can define a function using the following syntax:</p>
+<pre><code>function_name() {
+# commands
+}
+</code></pre>
+<p>To call a function, simply use its name. Here is an example:</p>
+<pre><code># Function Example
+greet() {
+echo "Hello, $1!"
+}
+
+greet "Alice"
+</code></pre>
+<p>In this example, the function <code>greet</code> takes one argument and prints a greeting message. When called with <code>greet "Alice"</code>, it outputs <code>Hello, Alice!</code></p>
+</section>
+
+
+    </div>
+<br><br><br><br>
+
+
+
+
+
+
+    <footer class="footer" id="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+    
+
+            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/daksh-lakhi">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+      
+    
+            <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/lakhidaksh-01">
+                <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+    
+    
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="mailto:dakshlakhi01@gmail.com">
+                  <ion-icon name="mail"></ion-icon>
+                </a>
+              </li>
+    
+    
+        </ul>
+        <h1 id="d">This Website is made by <span id="c">DAKSH LAKHI</span></h1>
+        <p>Feel free to connect with me!</p>
+        <span style="color:rgb(255, 196, 0);font-size: 2rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);" id="l">Thank you for visiting.</span>
+        <br><br>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+
+
+
+
+
+
+    <script src="scripts02.js">
+    </script>
+</body>
+</html>
