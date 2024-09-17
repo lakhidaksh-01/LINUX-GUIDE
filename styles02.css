@@ -78,8 +78,8 @@ h1 {
 
 /*nav bar editting*/
 nav {
-    background: var(--nav-background);
     color: var(--nav-link-color);
+    background: var(--nav-background);
     padding: 15px 4%;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -189,8 +189,9 @@ ul li {
 }
 
 pre {
-background: var(--code-background);
+
 color: var(--code-text-color);
+background: var(--code-background);
 padding: 15px;
 overflow-x: auto;
 border-radius: 8px;

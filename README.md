@@ -6,6 +6,7 @@ This repository contains a **Linux Operating System Guide** in the form of a web
 - **40+ Essential Linux Commands**: Learn key commands to efficiently navigate and manipulate the Linux environment.
 - **Shell Scripting Concepts**: Introduction to shell scripting with examples to automate tasks in Linux.
 - **Simple and Concise Design**: The website is designed to be straightforward, ensuring ease of use and readability.
+- **Font Awesome Integration:** Includes icons and fonts from Font Awesome to enhance the visual appeal and functionality of linux guide.
 
 ## Website Overview
 The website includes:
