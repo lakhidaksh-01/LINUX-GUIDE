@@ -15,6 +15,9 @@ The website includes:
 - Code snippets to demonstrate practical examples.
 - A section dedicated to shell scripting basics.
 
+## 📷 Screenshot
+
+![Website Screenshot](screenshot.png)  
+
 ## Contact
 For any queries or suggestions, feel free to contact me via [dakshlakhi01@gmail.com](mailto:dakshlakhi01@gmail.com).
-
